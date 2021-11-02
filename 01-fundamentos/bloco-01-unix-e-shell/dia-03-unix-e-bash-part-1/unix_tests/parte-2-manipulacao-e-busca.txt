@@ -1,0 +1,27 @@
+echo 'baixando nome de paises'
+\ncurl -o countries.txt "https://gist.githubusercontent.com/kalinchernev/486393efcca01623b18d/raw/daa24c9fea66afb7d68f8d69f0c4b8eeb9406e83/countries"
+ls
+echo 'exibindo o conteúdo no terminal'
+cat countries.txt
+echo 'exibindo o conteúdo por paginação'
+less countries.txt
+echo 'buscando brasil na lista com lower case'
+grep -i brazil countries.txt
+echo 'criando um arquivo'
+touch phrases.txt
+code phrases.txt
+ls
+echo 'buscando por frases que não tenham fox'
+grep -v fox phrases.txt
+echo 'exibindo a quantidade de palavras no arquivo'
+wc -w phrases.txt
+echo 'exibindo a quantidade de linhas do arquivo'
+wc -l phrases.txt
+echo '
+touch empty.tbt
+touch empty.pdf
+ls -ls
+echo 'listando arquivos com extensão .txt'
+ls *.txt
+echo 'acessando manual do ls'
+man ls

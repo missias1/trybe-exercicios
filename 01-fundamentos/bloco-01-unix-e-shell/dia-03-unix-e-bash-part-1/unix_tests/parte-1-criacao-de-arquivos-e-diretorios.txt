@@ -1,0 +1,45 @@
+echo 'criando o diretório unix_tests'
+mkdir unix_tests
+echo 'acessando pasta'
+cd unix_tests
+ls
+echo 'criando arquivo trybe.txt'
+touch trybe.txt
+ls
+echo 'copiando o arquivo trybe.txt e criando o trybe_backup.txt'
+cp trybe.txt trybe_backup.txt
+ls
+echo 'mudando o nome do arquivo'
+mv trybe.txt novotrybe.txt
+ls
+echo 'criando o diretório backup'
+mkdir backup
+ls
+echo 'movendo o arquivo trybe_backup.txt para a pasta backup'
+mv trybe_backup.txt backup
+ls
+cd backup
+ls
+..
+echo 'criando o diretório backup2'
+mkdir backup2
+ls
+echo 'listando só os arquivos .txt'
+ls *
+echo 'movendo o arquivo para a pasta backup2'
+mv backup/trybe_backup.txt backup2
+ls *
+echo 'apagando a pasta backup'
+rmdir backup
+ls
+echo 'renomeando a pasta backup2 para backup'
+mv backup2 backup
+ls
+echo 'mostrando o path do diretorio atual'
+pwd
+ls -la
+echo 'apagando a pasta backup'
+rm -rf backup
+ls
+echo 'limpando o terminal'
+clear
