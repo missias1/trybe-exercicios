@@ -1,0 +1,35 @@
+cd unix_tests	
+ls
+echo 'criando arquivo e adicionando texto'	
+cat > skills2.txt	
+ls	
+cat skills2.txt
+echo 'exibindo o conteúdo do arquivo em ordem alfabética'	
+sort < skills2.txt
+echo 'contando a quantidade  de linhas'	
+wc -l skills2.txt
+echo 'exibindo as top 3 linhas em ordem alfabética'	
+head -3 skills.txt | sort | cat > top_skills.txt	
+head -3 skills2.txt | sort | cat > top_skills.txt	
+ls	
+cat top_skills.txt	
+sort < skills2.txt | head -3 | cat > top_skills.txt	
+ls	
+cat top_skills.txt	
+echo 'criando arquivo e adicionando texto'
+cat > phrases2.txt	
+cat phrases2.txt	
+cat >> phrases2.txt	
+cat > phrases2.txt	
+cat phrases2.txt	
+cat > phrases2.txt	
+cat phrases2.txt
+echo 'exibindo a quantidade de linhas que contém br'	
+grep -i br phrases2.txt | wc -l	
+echo 'exibindo a quantidade de linha que não contém br'
+grep -v br phrases2.txt | wc -l	
+cat >> phrases2.txt	
+cat phrases.txt	
+cat phrases2.txt
+echo 'criando um arquivo a partir do conteúdo de dois arquivos'	
+cat phrases2.txt countries.txt > bunch_of_things.txt

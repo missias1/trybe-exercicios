@@ -1,0 +1,26 @@
+echo 'listando os processos'
+ps
+echo 'colocando o terminal para dormir em background'
+sleep 30 &
+ps
+echo 'matando o processo'
+kill 4546
+echo 'colocando o terminal para dormir em foreground'
+sleep 30
+echo 'colocando o processo em background'
+bg
+sleep 300 &
+sleep 200
+sleep 100
+echo 'listando todos os jobs'
+jobs
+echo 'trazendo o arquivo suspenso de volta'
+fg %2
+jobs
+echo 'recuperando os processos'
+fg %3
+bg %3
+jobs
+echo 'matando os processos'
+kill %1
+kill %2

@@ -1,0 +1,13 @@
+cd unix_tests
+echo 'visualizando as permissões'
+ls -l
+echo 'alterando as permissçoes de todos, dando acesso a escrita e leitura'
+chmod a+rw bunch_of_things.txt
+ls -l
+echo 'tirando a permissão de escrita de todos os usuários'
+chmod a-w bunch_of_things.txt
+ls
+ls-ls
+echo 'voltando a configuração de permissões para o padrão'
+chmod 644 bunch_of_things.txt
+ls -l
