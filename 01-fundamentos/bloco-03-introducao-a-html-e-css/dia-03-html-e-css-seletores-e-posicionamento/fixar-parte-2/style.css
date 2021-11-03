@@ -1,20 +1,37 @@
 .super-mario {
-    width: 200px;
-  }
-  
-  .goomba {
-    width: 100px;
-  }
-  
-  .baloon {
-  
-  }
-  
-  .speach {
-    font-size: 25px;
-  }
-  
-  .bowser {
-    width: 200px;
-  }
-  
+  width: 200px;
+  position: absolute;
+  left:250px;
+  z-index:1;
+}
+
+.goomba {
+  width: 100px;
+  position: absolute;
+  left: 320px;
+  top: 360px;
+  z-index:2;
+
+}
+
+.baloon {
+position: absolute;
+top: 170px;
+left: 560px;
+}
+
+.speach {
+  font-size: 25px;
+  position: absolute;
+  left: 580px;
+  top: 200px;
+  z-index: 2;
+
+}
+
+.bowser {
+  width: 200px;
+  position: absolute;
+  left: 800px;
+  top: 380px;
+}
