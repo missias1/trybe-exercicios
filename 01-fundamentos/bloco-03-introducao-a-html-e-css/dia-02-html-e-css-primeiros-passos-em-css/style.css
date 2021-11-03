@@ -1,0 +1,33 @@
+h1 {
+    font-size: 16px;
+    color: orange;
+    font-family: sans-serif;
+    text-align: center;
+    text-decoration: underline;
+   }
+
+ ul {
+     background-color: orange;
+     text-align: center;
+     line-height: 30px;
+ }
+ .lista {
+     background-color: rgb(245, 209, 143);
+ }
+ 
+ p {
+     font-weight: 600;
+     font-size: 3em;
+     font-style: italic;
+     text-align: center;
+   
+ }
+ #amarelo{
+   background-color: yellow;
+ }
+ #vermelho{
+   background-color: red;
+ }
+ #marrom {
+   background-color: brown;
+ }
