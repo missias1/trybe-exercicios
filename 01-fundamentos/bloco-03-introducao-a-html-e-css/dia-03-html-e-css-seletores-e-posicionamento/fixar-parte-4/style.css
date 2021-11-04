@@ -1,0 +1,8 @@
+body{
+    background-color: rgb(240, 224, 206);
+}
+
+div:hover {
+border: solid white;
+}
+
