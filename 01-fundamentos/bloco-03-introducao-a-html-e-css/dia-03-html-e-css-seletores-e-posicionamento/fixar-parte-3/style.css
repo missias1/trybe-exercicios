@@ -1,0 +1,12 @@
+h1, p, ol, li {
+    text-align: center;
+}
+
+li:hover{
+    background-color: rgb(211, 211, 211);  
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.listas {
+    list-style:none;
+    }
