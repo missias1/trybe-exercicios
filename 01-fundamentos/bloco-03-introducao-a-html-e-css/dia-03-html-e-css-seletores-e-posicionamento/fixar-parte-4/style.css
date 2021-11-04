@@ -1,0 +1,64 @@
+body{
+    background-color: rgb(240, 224, 206);
+}
+
+h3 {
+    background-color: rgb(255, 255, 255);
+    width: 180px;
+    line-height: 30px;
+    text-align: center;
+    margin-left: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+div{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+div:hover {
+    border: 5px solid rgb(255, 253, 253);
+    font-family:sans-serif;
+    margin-top: 30px;
+
+}
+
+#div1 {
+    background-color: blue;
+    color: blue;
+}
+
+#div2 {
+    background-color: orange;
+    color: orange;
+}
+
+#div3 {
+    background-color: violet;
+    color: violet;
+
+}
+
+#div4 {
+    background-color: rgb(95, 14, 95);
+    color: rgb(95, 14, 95);
+}
+
+#div5 {
+    background-color: rgb(202, 236, 132);
+    color: rgb(202, 236, 132);
+}
+
+div:nth-child(n){
+    width: 700px;
+    height: 60px;
+}
+
+div:nth-child(3n+2){
+    height: 85px;;
+}
+
+div:nth-child(2n+1){
+    font-style: italic;
+}
