@@ -1,3 +1,7 @@
+body{
+    background-color: honeydew;
+}
+
 h1, p, ol, li {
     text-align: center;
 }
@@ -5,8 +9,30 @@ h1, p, ol, li {
 li:hover{
     background-color: rgb(211, 211, 211);  
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+
 }
 
 .listas {
     list-style:none;
+    }
+
+    #youtube {
+        width:50px;
+        position: absolute;
+        left: 600px;
+        top: 100px;
+    }
+    
+    #coursera {
+        width: 50px;
+        position: absolute;
+        left: 600px;
+        border-radius: 15%;
+    }
+    
+    #edx {
+        width: 50px;
+        position: absolute;
+        left: 600px;
+        border-radius: 20%;
     }
