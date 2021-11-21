@@ -10,21 +10,37 @@
     <script>
       const paragraph = document.getElementById("paragraph");
       paragraph.style.color = "blue";
-      document.getElementById("page-title").innerText= "Titulo: Aprendendo sobre o DOM";
+      // document.getElementById("page-title").innerText= "Titulo: Aprendendo sobre o DOM";
       
-      document.getElementById("second-paragraph").innerText="Segundo parágrafo: Utilize document.getElementById('nomedoId')='novotexto' para substituir o conteúdo da tag que recebe aquele Id."
+      // document.getElementById("second-paragraph").innerText="Segundo parágrafo: Utilize document.getElementById('nomedoId')='novotexto' para substituir o conteúdo da tag que recebe aquele Id."
       
-      document.getElementById("subtitle").innerText="Subtítulo: Como substituir um texto"
+      // document.getElementById("subtitle").innerText="Subtítulo: Como substituir um texto"
       
-      document.getElementById("paragraph").innerText="Parágrafo: Primeiros passos"
+      // document.getElementById("paragraph").innerText="Parágrafo: Primeiros passos"
     
-      console.log(document.getElementsByClassName("p"))
+      // console.log(document.getElementsByClassName("p"))
       
-      document.getElementsByClassName("p")[1].style.background="pink"
+      // document.getElementsByClassName("p")[1].style.background="pink"
 
-      console.log(document.getElementsByTagName("h4"))
+      // console.log(document.getElementsByTagName("h4"))
 
-      document.getElementsByTagName("h4")[0].style.color="green"
+      // document.getElementsByTagName("h4")[0].style.color="green"
+
+      document.querySelector("#page-title").innerText= "Titulo: Aprendendo sobre o DOM";
+      
+      document.querySelectorAll("#second-paragraph")[0].innerText="Segundo parágrafo: Utilize document.getElementById('nomedoId')='novotexto' para substituir o conteúdo da tag que recebe aquele Id."
+      
+      document.querySelector("#subtitle").innerText="Subtítulo: Como substituir um texto"
+      
+      document.querySelector("#paragraph").innerText="Parágrafo: Primeiros passos"
+    
+      console.log(document.querySelectorAll("p"))
+      
+      document.querySelector("#second-paragraph").style.background="pink"
+
+      console.log(document.querySelector("h4"))
+
+      document.querySelectorAll("h4")[0].style.color="green"
     
     </script>
   </body>
