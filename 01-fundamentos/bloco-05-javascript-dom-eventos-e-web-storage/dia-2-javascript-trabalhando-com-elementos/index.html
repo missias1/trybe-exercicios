@@ -8,5 +8,43 @@
     Atenção!
     <section id="terceiroFilho"></section>
     <section id="quartoEUltimoFilho"></section>
+    <script>
+//Parte 1 -Buscando Elementos
+      console.log(document.getElementById("elementoOndeVoceEsta"))
+
+      document.getElementById("elementoOndeVoceEsta").parentNode.style.color="red"//acessa o Id "pai" e troca a cor do texto
+
+      document.getElementById("primeiroFilhoDoFilho").innerText="Adicionando texto no Id 'primeiroFilhoDoFilho'"
+
+      console.log(document.getElementById("pai").firstElementChild)//acessa o Id "primeiroFilho" a partir do Id "pai"
+
+      console.log(document.getElementById("elementoOndeVoceEsta").previousElementSibling)//acessa o Id "primeiroFilho" a partir do Id "elementoOndeVoceEsta"
+
+      console.log(document.getElementById("elementoOndeVoceEsta").nextSibling)//acessa o texto "Atenção" a partir do Id "elementoOndeVoceEsta" por meio do nextSibling (próximo nó)
+
+      console.log(document.getElementById("elementoOndeVoceEsta").nextElementSibling)//acessa o id "terceiroFilho" a partir do Id "elementoOndeVoceEsta" por meio do nextElementSibling
+
+      console.log(document.querySelector("#pai").lastChild.previousElementSibling.previousElementSibling)//acessa o id "terceiroFilho" a partir do id "pai" por meio do lastChild (último filho), retornando duas vezes (previousElementSibling) até chegar no "terceiro filho" 
+
+      console.log("br")
+//arte 2 - Criando Elementos
+
+      console.log(document.getElementById("pai").appendChild(document.createElement("p"))) //retorna a tag "p" criada. Irmã do Id "elementoOndeVoceEsta" e filha do Id "pai"
+      console.log(document.getElementById("pai").children)//mostra os elementos filhos do Id "pai", mostrando a nova tag "p" criada
+
+      console.log(document.getElementById("elementoOndeVoceEsta").appendChild(document.createElement("div")))//retorna a tag "div" criada. Filha do id "elementoOndeVoceEsta"
+
+      console.log(document.getElementById("elementoOndeVoceEsta").children)//retorna os elemtnos filhos do Id "elementoOndeVoceEsta", incluindo a nova tag "div" criada
+
+      console.log(document.getElementById("primeiroFilhoDoFilho").appendChild(document.createElement("h2")))//retorna tag "h2" criada como filha do Id "primeiroFilhoDoFilho"
+
+      console.log(document.getElementById("primeiroFilhoDoFilho").children)//retorna o novo e único elemento filho do Id "primeiroFilhoDoFilho", a tag "h2"
+
+      console.log(document.getElementById("primeiroFilhoDoFilho").parentNode.parentNode.lastChild.previousSibling.previousSibling.previousSibling.previousSibling.previousSibling)
+      //retorna o id "terceiroFilho" acessando o pai do pai do "primeiroFilhoDoFilho", chegando no id "Pai". Depois acessa o último filho desse elemento e a partir dele vai retornando aos filhos anteriores até chegar no "terceiroFilho"
+
+      console.log(document.getElementById("primeiroFilhoDoFilho").parentNode.parentNode.children[2])//outra maneira de acessar o "terceiroFilho" a partir do id "primeiroFilhoDoFilho" de forma mais rápida. Ao chegar no id "pai", acessa-se a lista dos seus filhos (children) e passa-se a posição por meio dos []
+
+    </script>
   </section>
 </main>
