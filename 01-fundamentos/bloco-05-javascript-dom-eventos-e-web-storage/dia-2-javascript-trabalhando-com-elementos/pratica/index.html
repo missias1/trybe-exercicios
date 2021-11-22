@@ -76,7 +76,12 @@
 
       document.querySelector("main").appendChild(document.createElement("section"))//cria e adiciona a tag section como filha da tag main
 
-      document.getElementsByTagName("section")[1].className="left-content"
+      document.getElementsByTagName("section")[1].className="left-content"//adiciona classe na tag section
+
+      document.querySelector("main").appendChild(document.createElement("section"))//cria e adiciona a tag section como filha da tag main
+
+      document.querySelector("main").lastChild.className="right-content"//adicina classe na tag section
+
 
 
       console.log(document.querySelector("main").children)
