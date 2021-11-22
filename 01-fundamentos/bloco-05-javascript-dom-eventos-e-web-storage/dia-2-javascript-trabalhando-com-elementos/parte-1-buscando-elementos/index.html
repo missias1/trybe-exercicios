@@ -1,0 +1,31 @@
+<main id="paiDoPai">
+  <section id="pai">
+    <section id="primeiroFilho"></section>
+    <section id="elementoOndeVoceEsta">
+      <section id="primeiroFilhoDoFilho"></section>
+      <section id="segundoEUltimoFilhoDoFilho"></section>
+    </section>
+    Atenção!
+    <section id="terceiroFilho"></section>
+    <section id="quartoEUltimoFilho"></section>
+    <script>
+//Parte 1 -Buscando Elementos
+      console.log(document.getElementById("elementoOndeVoceEsta"))
+
+      document.getElementById("elementoOndeVoceEsta").parentNode.style.color="red"//acessa o Id "pai" e troca a cor do texto
+
+      document.getElementById("primeiroFilhoDoFilho").innerText="Adicionando texto no Id 'primeiroFilhoDoFilho'"
+
+      console.log(document.getElementById("pai").firstElementChild)//acessa o Id "primeiroFilho" a partir do Id "pai"
+
+      console.log(document.getElementById("elementoOndeVoceEsta").previousElementSibling)//acessa o Id "primeiroFilho" a partir do Id "elementoOndeVoceEsta"
+
+      console.log(document.getElementById("elementoOndeVoceEsta").nextSibling)//acessa o texto "Atenção" a partir do Id "elementoOndeVoceEsta" por meio do nextSibling (próximo nó)
+
+      console.log(document.getElementById("elementoOndeVoceEsta").nextElementSibling)//acessa o id "terceiroFilho" a partir do Id "elementoOndeVoceEsta" por meio do nextElementSibling
+
+      console.log(document.querySelector("#pai").lastChild.previousElementSibling.previousElementSibling)//acessa o id "terceiroFilho" a partir do id "pai" por meio do lastChild (último filho), retornando duas vezes (previousElementSibling) até chegar no "terceiro filho" 
+
+    </script>
+  </section>
+</main>
