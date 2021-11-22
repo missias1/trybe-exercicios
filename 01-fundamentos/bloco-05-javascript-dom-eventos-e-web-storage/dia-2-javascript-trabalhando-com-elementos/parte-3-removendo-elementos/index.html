@@ -8,6 +8,8 @@
     Atenção!
     <section id="terceiroFilho"></section>
     <section id="quartoEUltimoFilho"></section>
+  </section>
+</main>
     <script>
 //Parte 1 -Buscando Elementos
       console.log(document.getElementById("elementoOndeVoceEsta"))
@@ -45,6 +47,43 @@
 
       console.log(document.getElementById("primeiroFilhoDoFilho").parentNode.parentNode.children[2])//outra maneira de acessar o "terceiroFilho" a partir do id "primeiroFilhoDoFilho" de forma mais rápida. Ao chegar no id "pai", acessa-se a lista dos seus filhos (children) e passa-se a posição por meio dos []
 
+      console.log("br")
+
+//Parte 3 - Removendo Elementos
+
+      console.log(document.getElementById("paiDoPai").children)//retornando os filhos de "paiDoPai", que é somente 1
+
+      console.log(document.getElementById("pai").children)//retornando os filhos de "pai", que são 5
+
+      document.getElementById("pai").removeChild(document.getElementById("primeiroFilho"))//remove o filho com Id "primeiroFilho"
+
+      document.getElementById("pai").removeChild(document.getElementById("terceiroFilho"))//remove o filho com Id "terceiroFilho"
+
+      document.getElementById("pai").removeChild(document.getElementById("quartoEUltimoFilho"))//remove o filho com Id "quartoEUltimoFilho"
+
+      document.getElementById("pai").removeChild(document.getElementsByTagName("p")[0])//remove o filho de tag "p"
+
+      console.log(document.getElementById("pai").children)//retorna o filho que permaneceu, o Id "elementoOndeVoceEsta"
+
+      console.log(document.getElementById("elementoOndeVoceEsta").children)//retorna filhos do Id "elementoOndeVoceEsta"
+
+      let array= document.getElementById("elementoOndeVoceEsta").children
+      
+      for (let i=0; i<array.length; i+=1){
+
+        if (array[i]!==document.getElementById("primeiroFilhoDoFilho")){
+          document.getElementById("elementoOndeVoceEsta").removeChild(array[i])
+        }
+      } //remove um elemento
+      console.log("br")
+      
+      document.getElementById("elementoOndeVoceEsta").removeChild(document.getElementsByTagName("div")[0])//remove a div, filha do "elementoOndeVoceEsta"
+
+      console.log(document.getElementById("elementoOndeVoceEsta").children)//retorna o único filho que sobrou no Id "elementoOndeVoceEsta"
+
+      console.log(document.getElementById("primeiroFilhoDoFilho").children)//retorna os filhos do Id "primeiroFilhoDoFilho", que é apenas 1.
+
+      document.getElementById("primeiroFilhoDoFilho").removeChild(document.getElementsByTagName("h2")[0])//remove o filho "h2" do Id "primeiroFilhoDoFilho"
+
+      console.log(document.getElementById("primeiroFilhoDoFilho").children)//retorna o número de filho do Id "primeiroFilhoDoFilho", que agora é 0.
     </script>
-  </section>
-</main>
