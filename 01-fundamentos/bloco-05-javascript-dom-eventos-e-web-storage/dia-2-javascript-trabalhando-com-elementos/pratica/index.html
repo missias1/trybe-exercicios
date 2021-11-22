@@ -107,7 +107,7 @@
 
       let item=numeros[i]
 
-      document.querySelectorAll("section")[2].appendChild(document.createElement("li"))//cria e adiciona a cada laço de repetição uma tag li como filha da tag "section" que tem a classe ".right-content"
+      document.querySelector("ul").appendChild(document.createElement("li"))//cria e adiciona a cada laço de repetição uma tag li como filha da tag "section" que tem a classe ".right-content"
 
       document.querySelectorAll("li")[i].innerText=item//adiciona a cada laço de repetição o texto correspondente ao índice do array
     }
@@ -116,12 +116,23 @@
       document.querySelector("main").appendChild(document.createElement("h3"))
     }//cria com o laço for 3 tags "h3"
     
+//A partir daqui mudanças e remoções serão feitas
 
-      console.log(document.querySelector("main").children)
+    document.querySelector("h1").className="title"//adiciona classe na tag "h1"
 
-      
+    for(let i=0; i<3; i+=1){
+      document.querySelectorAll("h3")[i].className="description"
+    }//adiciona a mesma classe nas 3 tags "h3"
 
+    document.querySelector("main").removeChild(document.querySelectorAll("section")[1])//remove a tag section que tem a classe "left-content"
 
+    document.querySelectorAll("section")[1].style.marginRight="auto"//centraliza a section com a classe "right-content"
+
+    document.querySelectorAll("section")[0].parentNode.style.backgroundColor="green"//muda a cor de fundo do elemento pai da section
+
+    document.querySelector("ul").removeChild(document.querySelectorAll("li")[8])//remove o penúltimo "li" da tag pai "ul"
+
+    document.querySelector("ul").removeChild(document.querySelectorAll("li")[8])//remove o último "li" da tag pai "ul"
     </script>
   </body>
 </html>
