@@ -88,9 +88,38 @@
 
       document.querySelector("img").className="small-image"//adiciona classe na tag img
 
+      document.querySelector(".right-content").appendChild(document.createElement("ul"))//cria e adiciona a tag 'ul' como filha da tag 'section' que tem a classe ".right-content"
+
+      let numeros=[
+        "um",
+        "dois",
+        "três",
+        "quatro",
+        "cinco",
+        "seis",
+        "sete",
+        "oito",
+        "nove",
+        "dez"
+    ];//criando array que será percorrido para criar o conteúdo das 'li'
+
+    for (let i=0; i<numeros.length; i+=1){
+
+      let item=numeros[i]
+
+      document.querySelectorAll("section")[2].appendChild(document.createElement("li"))//cria e adiciona a cada laço de repetição uma tag li como filha da tag "section" que tem a classe ".right-content"
+
+      document.querySelectorAll("li")[i].innerText=item//adiciona a cada laço de repetição o texto correspondente ao índice do array
+    }
+
+    for (let i=0; i<3; i+=1){
+      document.querySelector("main").appendChild(document.createElement("h3"))
+    }//cria com o laço for 3 tags "h3"
+    
+
       console.log(document.querySelector("main").children)
 
-
+      
 
 
     </script>
