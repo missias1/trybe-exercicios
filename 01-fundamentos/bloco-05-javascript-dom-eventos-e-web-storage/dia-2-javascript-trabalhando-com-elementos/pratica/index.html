@@ -57,6 +57,24 @@
   </head>
   <body>
     <script>
+      
+      document.getElementsByTagName("body")[0].appendChild(document.createElement("h1"))//criando e adicionando h1 como filho do body
+
+      document.querySelector("h1").innerText="Exercício 5.2 - JavaScript DOM"//adicionando texto ao h1
+
+      document.querySelector("body").appendChild(document.createElement("main"))//criando e adicionando main como filho do body
+      
+      document.querySelector("main").className="main-content"//colocando classe na tag main
+
+      document.querySelector("main").appendChild(document.createElement("section"))
+
+      document.querySelector("section").className="center-content"
+
+
+
+      console.log(document.querySelector("main").children)
+
+
 
     </script>
   </body>
