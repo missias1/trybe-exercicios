@@ -66,13 +66,21 @@
       
       document.querySelector("main").className="main-content"//colocando classe na tag main
 
-      document.querySelector("main").appendChild(document.createElement("section"))
+      document.querySelector("main").appendChild(document.createElement("section"))//cria e adiciona a tag section como filha da tag main
 
-      document.querySelector("section").className="center-content"
+      document.querySelector("section").className="center-content"//adiciona classe na tag section
 
+      document.querySelector("section").appendChild(document.createElement("p"))//cria e adiciona a tag p como filha da tag section
+
+      document.querySelector("p").innerText="Texto criado com o DOM"//adiciona texto na tag p
+
+      document.querySelector("main").appendChild(document.createElement("section"))//cria e adiciona a tag section como filha da tag main
+
+      document.getElementsByTagName("section")[1].className="left-content"
 
 
       console.log(document.querySelector("main").children)
+
 
 
 
