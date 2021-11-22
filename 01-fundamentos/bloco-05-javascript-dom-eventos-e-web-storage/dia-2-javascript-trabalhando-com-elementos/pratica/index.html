@@ -82,7 +82,11 @@
 
       document.querySelector("main").lastChild.className="right-content"//adicina classe na tag section
 
+      document.querySelector(".left-content").appendChild(document.createElement("img"))//cria e adiciona a tag img como filha da tag section que tem a classe ".left-content"
 
+      document.querySelector("img").src="https://picsum.photos/200"//adiciona o link da imagem
+
+      document.querySelector("img").className="small-image"//adiciona classe na tag img
 
       console.log(document.querySelector("main").children)
 
