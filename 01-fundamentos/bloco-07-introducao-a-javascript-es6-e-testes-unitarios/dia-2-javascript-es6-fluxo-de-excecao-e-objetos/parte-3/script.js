@@ -47,6 +47,20 @@ const valoresDoObjeto = (objeto)=> {
 
 valoresDoObjeto(lesson1)
 
-const allLessons= Object.assign({}, lesson1)
+const allLessons= {lesson1:{}, lesson2:{}, lesson3:{}}
+
+Object.assign(allLessons.lesson1, lesson1)
+Object.assign(allLessons.lesson2, lesson2)
+Object.assign(allLessons.lesson3, lesson3)
 
 console.log(allLessons)
+
+const totalDeAlunos = ()=>{
+  const a = allLessons.lesson1['numeroEstudantes'];
+  const b = allLessons.lesson2['numeroEstudantes'];
+  const c = allLessons.lesson3['numeroEstudantes'];
+  console.log(a+b+c)
+  return a+b+c
+}
+totalDeAlunos(allLessons)
+
