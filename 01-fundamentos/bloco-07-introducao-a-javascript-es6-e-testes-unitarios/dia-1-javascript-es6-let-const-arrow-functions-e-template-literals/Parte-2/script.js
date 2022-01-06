@@ -15,16 +15,28 @@ fatorial(8)
 //Crie uma função que recebendo uma frase, retorna a maior palavra
 
 const maiorPalavra = (frase) => {
-  let palavras=[];
   let index = []
-  palavras.push(frase.split(" "))
-  for(let i=0; i<palavras[0].length; i+=1){
-    index.push(palavras[0][i].length)
+  let palavras = frase.split(" ")
+  console.log(palavras)
+  for(let i=0; i<palavras.length; i+=1){
+    index.push(palavras[i].length)
   }
   let resultado = Math.max(...index);
-  console.log(palavras[0][resultado])
+  console.log(resultado)
+  console.log(palavras[resultado])
+  console.log(index)
 }
 
 maiorPalavra("Antônio foi no banheiro e não sabemos o que aconteceu")
 
 //
+const novo = n => {
+  array=[]
+for(let i=0; i<=n-1; i+=1){
+  console.log(array)
+}
+console.log(array)
+}
+novo(3)
+
+// const fatore = n =>  n > 0 ? 
